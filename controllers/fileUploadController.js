@@ -8,7 +8,7 @@ module.exports.uploadController = function(req, res){
     try {
 
         // allow server to serve cross origin requests
-        res.set('Access-Control-Allow-Origin', 'http://localhost:3000');
+        res.set('Access-Control-Allow-Origin', '*');
 
         // if username or file is absent return response with failed status
         if(!req.file || !req.body.username){
